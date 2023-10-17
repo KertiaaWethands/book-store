@@ -1,0 +1,61 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;  /* Agar navbar selalu di atas elemen lain */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  padding-right: 70px;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.loginButton {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+
+  i.fa {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+.content {
+  margin-top: 80px; /* Sesuaikan dengan tinggi navbar Anda agar konten tidak tertutup oleh navbar */
+  flex: 1;
+  overflow-y: auto; /* Menambahkan scrollbar jika kontennya terlalu panjang */
+}

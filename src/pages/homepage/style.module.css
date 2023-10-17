@@ -1,0 +1,94 @@
+.container {
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.landing {
+  position: relative;
+  width: 75vw;
+  margin: 2rem auto;
+  overflow: hidden; 
+}
+
+.landingImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease; /* Efek zoom saat hover */
+}
+
+.landing:hover .landingImage {
+  transform: scale(1.05); 
+}
+
+h1, p {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4); /* Menambahkan latar belakang setengah transparan untuk meningkatkan keterbacaan */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+h1 {
+  top: 20%;
+  font-size: 2em;
+}
+
+p {
+  top: 35%;
+  font-size: 1.2em;
+}
+
+.collectionHeading {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem; /* Menambahkan jarak antara kartu */
+}
+
+.card {
+  width: calc(25% - 1rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.detailButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.detailButton:hover {
+  background-color: #0056b3;
+}
