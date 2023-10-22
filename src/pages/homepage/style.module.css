@@ -1,8 +1,15 @@
 .container {
   font-family: 'Arial', sans-serif;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 1rem;
+  box-sizing: border-box;
 }
 
 .landing {
@@ -16,35 +23,37 @@
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s ease; /* Efek zoom saat hover */
+  transition: transform 0.3s ease; 
 }
 
 .landing:hover .landingImage {
   transform: scale(1.05); 
 }
 
-h1, p {
+.landingTextH, .landingTextP {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   text-align: center;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.4); /* Menambahkan latar belakang setengah transparan untuk meningkatkan keterbacaan */
+  background-color: rgba(0, 0, 0, 0.4); 
   padding: 0.5rem 1rem;
   border-radius: 5px;
 }
 
-h1 {
+.landingTextH {
   top: 20%;
   font-size: 2em;
 }
 
-p {
-  top: 35%;
+.landingTextP {
+  top: 40%;
   font-size: 1.2em;
 }
-
+.collections{
+  width: 75%;
+}
 .collectionHeading {
   text-align: center;
   margin-top: 2rem;
@@ -55,17 +64,21 @@ p {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem; /* Menambahkan jarak antara kartu */
+  justify-content: center;
+  gap: 50px; 
+  
+  
 }
 
 .card {
-  width: calc(25% - 1rem);
+  width: calc(25% );
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   text-align: center;
   border-radius: 10px;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -77,8 +90,12 @@ p {
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
+  flex-grow: 0; 
 }
-
+p{
+  color: black;
+  margin: 10px;
+}
 .detailButton {
   padding: 0.5rem 1rem;
   border: none;
@@ -92,3 +109,121 @@ p {
 .detailButton:hover {
   background-color: #0056b3;
 }
+.services {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serviceHeading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.serviceCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.serviceCard {
+  width: calc(33% - 1rem);  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.serviceCard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.articlesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 75%;
+  margin-bottom: 100px;
+  
+}
+
+.articleCard {
+  width: calc(25% - 1rem);  /* Setiap kartu akan mengambil sekitar 25% dari lebar container, dengan sedikit penyesuaian untuk celah */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.articleImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.articlesHeading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  width: 100%;
+  max-width: 1200px;
+  margin: 1rem auto 2rem; 
+}
+
+.articleTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.articleSummary {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #555;
+  flex-grow: 1;
+}
+
+.readMoreButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center;
+}
+
+.readMoreButton:hover {
+  background-color: #0056b3;
+}
+
+.footer {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: black;
+  color: #ecf0f1; 
+  padding: 1rem 0;
+  text-align: center;
+  border-top: 1px solid #34495e; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  color: white;
+}
+

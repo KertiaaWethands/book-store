@@ -8,8 +8,8 @@ export function Layout(props) {
       <header className={styles.navbar}>
         <div className={styles.logo}>Projek Buku</div>
         <nav>
-          <Link to="/homepage" className={styles.navLink}>Home</Link>
-          <Link to="#" className={styles.navLink}>Profil</Link>
+          <Link to="/" className={styles.navLink}>Home</Link>
+          <Link to="/profil" className={styles.navLink}>Profil</Link>
           <Link to="#" className={styles.navLink}>Prosedur Layanan</Link>
           <Link to="#" className={styles.navLink}>Layanan Produk</Link>
           <Link to="/login" className={`${styles.navLink} ${styles.loginButton}`}>

@@ -1,7 +1,6 @@
 .layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 .navbar {
@@ -15,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;  /* Agar navbar selalu di atas elemen lain */
+  z-index: 1000;  
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -55,7 +54,6 @@ nav {
 }
 
 .content {
-  margin-top: 80px; /* Sesuaikan dengan tinggi navbar Anda agar konten tidak tertutup oleh navbar */
-  flex: 1;
-  overflow-y: auto; /* Menambahkan scrollbar jika kontennya terlalu panjang */
+  margin-top: 80px; 
+  padding-top: 80px;
 }
