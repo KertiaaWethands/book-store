@@ -28,6 +28,7 @@ composer install
 ```
 6. Jalankan migrasi database untuk membuat tabel-tabel yang diperlukan
 ```
+php artisan key:generate
 php artisan migrate
 ```
 7. Jalankan server pengembangan
